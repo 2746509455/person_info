@@ -12,7 +12,6 @@ export default (url, method, params) => {
 				'Content-type': 'application/json'
 			},
 			data: {
-				openid:openid,
 				...params 
 			},
 			success(response) {
