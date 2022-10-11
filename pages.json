@@ -39,6 +39,14 @@
             
             
         }
+        ,{
+            "path" : "pagesIndex/integralDetails/integralDetails",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

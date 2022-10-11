@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="background-color: #f3f3f3;">
 		<view class="banTab" @click="back">
 			<u-navbar :height="40" :is-fixed="false" :is-back="true" title="志愿者服务详情">
 
@@ -104,7 +104,6 @@
 	.container {
 		width: 100vw;
 		padding-bottom: 20rpx;
-		background-color: #f3f3f3;
 	}
 
 	.banner {

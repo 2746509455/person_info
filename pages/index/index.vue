@@ -13,7 +13,7 @@
 						<view class="integral" style="text-align: right;color: #3e3e3e;padding-top: 12rpx;">
 							党员积分：4560
 						</view>
-						<view class="integral" style="text-align: right;">
+						<view class="integral" style="text-align: right;" @click="toinDetails">
 							查看积分详情
 						</view>
 					</view>
@@ -156,6 +156,12 @@
 		},
 
 		methods: {
+			// 去积分详情页
+			toinDetails(){
+				uni.navigateTo({
+					url:'/pagesIndex/integralDetails/integralDetails'
+				})
+			},
 			
 			// 去学习活动详情
 			toLearnDetails(){

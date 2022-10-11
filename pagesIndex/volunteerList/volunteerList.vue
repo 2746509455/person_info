@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="background-color: #f3f3f3;">
 		<view class="banTab" @click="back">
 			<u-navbar :height="40" :is-back="true" title="志愿者服务列表">
 			
@@ -14,7 +14,7 @@
 			
 			<!-- 正文 -->
 			<view class="content">
-				<view class="card">
+				<scroll-view scroll-y class="card">
 					<view class="item" @click="toDetails">
 						<view class="left">
 							<image src="@/static/image/index/77.png" class="cardImg"></image>
@@ -54,8 +54,21 @@
 					</view>
 					
 					
+					<view class="item" @click="toDetails">
+						<view class="left">
+							<image src="@/static/image/index/chahua.png" class="cardImg"></image>
+						</view>
+						<view class="right">
+							<view class="title">帮助老年人清理卫生</view>
+							<view class="subTitle">困难帮扶</view>
+							<view class="text">为落实市、区残疾人事业高质量发展工作部署，进一步提升街道残联服务能力水平。近日，兴仁街道组织开展残疾人基本情况入户核查…</view>
+							<view class="timer">2022.10.08 15:18</view>
+						</view>
+					</view>
 					
-				</view>
+					
+					
+				</scroll-view>
 			</view>
 		</view>
 		
@@ -92,26 +105,25 @@
 	}
 	.container{
 		width: 100vw;
-		background-color: #f3f3f3;
-		padding-bottom: 190rpx;
 	}
 	.banner{
 		width: 100%;
-		height: 376rpx;
+		height: 326rpx;
 		.banImg{
 			width: 100%;
 			height: 100%;
 		}
 	}
 	.content{
-		margin-top: 40rpx;
+		margin-top: 100rpx;
+		height: calc(100vh - 504rpx);
 		.card{
 			width: 670rpx;
-			// height: 140px;
+			height: 750rpx;
 			margin: 0 auto;
 			.item{
 				height: 288rpx;
-				margin: 30rpx 0;
+				margin: 0 0 20rpx 0;
 				box-sizing: border-box;
 				border-bottom: 8rpx solid #B31B12;
 				background-color: white;
