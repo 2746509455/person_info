@@ -1,8 +1,17 @@
 <template>
 	<view>
+<<<<<<< HEAD
 		<view style="width: 100vw;height: 100vh;">
 			<view class="top-image">
 				<image class="banImg" src="@/static/image/index/title.png" mode=""></image>
+=======
+		<u-navbar :is-back="true" title="首页">
+
+		</u-navbar>
+		<scroll-view scroll-y style="width: 100vw;height: 100vh;">
+			<view class="top-image">
+				<image src="@/static/image/index/title.png" mode=""></image>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			</view>
 			<view class="content">
 				<view class="info">
@@ -26,12 +35,17 @@
 					<view class="person-info">
 						<view style="padding-bottom:22rpx">
 							<view class="" style="float: left;padding-right: 60rpx;">
+<<<<<<< HEAD
 								<text style="font-weight: 600;">姓名:</text>
 								<text style="margin-left: 20rpx;">李铮</text>
+=======
+								姓名：李铮
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 							</view>
 							<text
 								style="background-color: #E85656;color: aliceblue;padding: 4rpx 16rpx 4rpx 16rpx;border-radius: 10px;font-size: 12px;">在职党员</text>
 						</view>
+<<<<<<< HEAD
 						<view style="padding-bottom:22rpx">
 							<text style="font-weight: 600;">党龄：</text>
 							<text>10年</text>
@@ -44,6 +58,18 @@
 							<text style="font-weight: 600;">志愿服务累计时长：</text>
 							<text>20.0小时</text>
 						</view>
+=======
+						<view style="padding-bottom:22rpx">党龄：10年</view>
+						<view style="padding-bottom:22rpx">
+							<view>
+								所在党支部:
+							</view>
+							<view>
+								枣庄市高新区兴仁街道党总支第三支部
+							</view>
+						</view>
+						<view style="padding-bottom:22rpx">志愿服务累计时长：20.0小时</view>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 					</view>
 
 				</view>
@@ -57,21 +83,37 @@
 					<view class="scrollFirst" style="white-space: nowrap;">
 						<scroll-view enable-flex="true" scroll-x="true" class="scroll_first" @scrolltoupper="upper"
 							@scrolltolower="lower" @scroll="scroll">
+<<<<<<< HEAD
 							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
 							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
 							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
 							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
 							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
+=======
+							<image src="@/static/image/index/activity.png" class="oipc"></image>
+							<image src="@/static/image/index/activity.png" class="oipc"></image>
+							<image src="@/static/image/index/activity.png" class="oipc"></image>
+							<image src="@/static/image/index/activity.png" class="oipc"></image>
+							<image src="@/static/image/index/activity.png" class="oipc"></image>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 						</scroll-view>
 					</view>
 
 				</view>
 				<view class="service">
+<<<<<<< HEAD
 					<view class="title_loc" style="display: flex;flex-direction: column;height: 80rpx;">
 						<view class="head">
 							<view class="headBox" style="display: flex;">
 								<view class="rod"></view>
 								<view class="title" style="font-weight: 600;">
+=======
+					<view class="title_loc" style="display: flex;flex-direction: column;">
+						<view class="head">
+							<view class="headBox" style="display: flex;">
+								<view class="rod"></view>
+								<view class="title">
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 									志愿服务
 								</view>
 							</view>
@@ -80,7 +122,29 @@
 								查看全部
 							</view>
 						</view>
+						<view class="scrollSecond" style="white-space: nowrap;">
+							<scroll-view class="scroll_second" scroll-x="true" @scroll="scroll" scroll-left="120">
+								<view class="inblock">
+									<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
+									<view class="text">七夕主题活动</view>
+								</view>
+								<view class="inblock">
+									<image src="@/static/image/index/help-old.png" class="oipcSecondImage"></image>
+									<view class="text">帮助老年人清理卫生</view>
+								</view>
+								<view class="inblock">
+									<image src="@/static/image/index/chahua.png" class="oipcSecondImage"></image>
+									<view class="text">插画主题活动</view>
+								</view>
+								<view class="inblock">
+									<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
+									<view class="text">七夕主题活动</view>
+								</view>
+							</scroll-view>
+						</view>
+
 					</view>
+<<<<<<< HEAD
 					<view class="scrollSecond" style="white-space: nowrap;margin-left: 20rpx;">
 						<scroll-view class="scroll_second" scroll-x="true" @scroll="scroll" scroll-left="120">
 							<view class="inblock" @click="toDetails">
@@ -102,16 +166,26 @@
 						</scroll-view>
 					</view>
 
+=======
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 
 
 
 				</view>
 				<view class="learning">
+<<<<<<< HEAD
 					<view class="title_loc" style="display: flex;flex-direction: column;height: 80rpx;">
 						<view class="head">
 							<view class="headBox" style="display: flex;">
 								<view class="rod"></view>
 								<view class="title" style="font-weight: 600;">
+=======
+					<view class="title_loc" style="display: flex;flex-direction: column;">
+						<view class="head">
+							<view class="headBox" style="display: flex;">
+								<view class="rod"></view>
+								<view class="title">
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 									党员学习活动清单
 								</view>
 							</view>
@@ -148,7 +222,11 @@
 	export default {
 		data() {
 			return {
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			}
 		},
 		onLoad() {
@@ -156,6 +234,7 @@
 		},
 
 		methods: {
+<<<<<<< HEAD
 			tovoList() {
 				uni.navigateTo({
 					url: '/pagesIndex/volunteerList/volunteerList'
@@ -178,6 +257,16 @@
 			},
 
 
+=======
+			tovoList(){
+				uni.navigateTo({
+					url:'/pagesIndex/volunteerList/volunteerList'
+				})
+			},
+			
+			
+			
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			// ··················滚动内容
 			change(e) {
 				this.current = e.detail.current;
@@ -205,6 +294,7 @@
 		background-color: darkred;
 	}
 
+<<<<<<< HEAD
 	.banImg {
 		width: 100vw;
 		height: 376rpx;
@@ -217,6 +307,15 @@
 
 	.info {
 		width: 100vw;
+=======
+	.content {
+		position: absolute;
+		top: 328rpx;
+	}
+
+	.info {
+		width: 100vw;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		height: 416rpx;
 		background: #FFFFFF;
 		box-shadow: 0px 0px 8rpx 0px rgba(135, 135, 135, 0.19);
@@ -225,7 +324,11 @@
 	}
 
 	.scrollFirst {
+<<<<<<< HEAD
 		margin-left: 20rpx;
+=======
+		margin-left: 40rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 	}
 
 	.scroll_first {
@@ -335,20 +438,31 @@
 	}
 
 	.main {
+<<<<<<< HEAD
 		width: 90%;
+=======
+		width: 85%;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		margin: 0 auto;
 
 	}
 
 	.mainInfo {
 		line-height: 60rpx;
+<<<<<<< HEAD
 		height: 70rpx;
+=======
+		height: 80rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		-webkit-box-orient: vertical;
+<<<<<<< HEAD
 		font-size: 28rpx;
+=======
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		/* border-bottom: 1px dashed #E3E3E3; */
 	}
 
@@ -365,9 +479,12 @@
 		color: #D22C2C;
 		font-family: PingFangSC-Medium, PingFang SC;
 		font-size: 12px;
+<<<<<<< HEAD
 		display: flex;
 		justify-content: center;
 		align-items: center;
+=======
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 	}
 
 	.title {

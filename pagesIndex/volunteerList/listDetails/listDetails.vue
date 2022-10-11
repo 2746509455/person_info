@@ -1,10 +1,16 @@
 <template>
 	<view>
+<<<<<<< HEAD
 		<view class="" @click="back">
 			<u-navbar :height="30" :is-fixed="false" :is-back="true" title="志愿者服务详情">
 
 			</u-navbar>
 		</view>
+=======
+		<u-navbar  @leftClick="back" :is-back="true" title="志愿者服务详情">
+
+		</u-navbar>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		<view class="container">
 			<!-- 顶部主图 -->
 			<view class="banner">
@@ -14,7 +20,11 @@
 			<view class="details">
 				<view class="title_col">
 					<view class="red"></view>
+<<<<<<< HEAD
 					<view class="banTitle" style="font-weight: 600;">活动介绍</view>
+=======
+					<view class="banTitle">活动介绍</view>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 				</view>
 				<view class="title">活动名称:<view class="subTitle">七夕节主题活动</view>
 				</view>
@@ -35,6 +45,7 @@
 			<view class="activityImg">
 				<view class="title_col">
 					<view class="red"></view>
+<<<<<<< HEAD
 					<view class="banTitle" style="font-weight: 600;">活动风采</view>
 				</view>
 				<view class="img">
@@ -52,6 +63,20 @@
 						<u-upload width="220rpx" height="220rpx" @on-uploaded="onUploaded" ref="uUpload" :action="action">
 						</u-upload>
 					</view>
+=======
+					<view class="banTitle">活动介绍</view>
+				</view>
+				<view class="img">
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+					<image src="@/static/image/index/activity.png" class="image"></image>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 				</view>
 			</view>
 
@@ -64,6 +89,7 @@
 		data() {
 			return {
 
+<<<<<<< HEAD
 				// 上传路径
 				imageList: [],
 				action: 'http://www.example.com/upload'
@@ -90,6 +116,15 @@
 			back() {
 				uni.navigateTo({
 					url: '/pagesIndex/volunteerList/volunteerList'
+=======
+			}
+		},
+		methods: {
+			back(){
+				console.log('返回');
+				uni.navigateTo({
+					url:'/pagesIndex/volunteerList/volunteerList'
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 				})
 			}
 		}
@@ -99,7 +134,11 @@
 <style lang="less" scoped>
 	.container {
 		width: 100vw;
+<<<<<<< HEAD
 		margin-top: 60rpx;
+=======
+		margin-top: 80rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		padding-bottom: 20rpx;
 		background-color: #f3f3f3;
 	}
@@ -185,6 +224,7 @@
 				font-family: PingFangSC-Medium, PingFang SC;
 			}
 		}
+<<<<<<< HEAD
 
 		.img {
 			width: 100%;
@@ -196,6 +236,18 @@
 				width: 220rpx;
 				height: 220rpx;
 				margin: 5rpx 0 0 5rpx;
+=======
+		
+		.img{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.image{
+				width: 220rpx;
+				height: 220rpx;
+				margin-top: 8rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			}
 		}
 	}

@@ -1,9 +1,13 @@
 <template>
 	<view>
 		<view class="container">
+<<<<<<< HEAD
 			<view class="title">
 				<image class="titleImg" src="@/static/image/login/zi.png" mode=""></image>
 			</view>
+=======
+			<view class="title">兴仁党建</view>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			<view class="content">
 				<view class="input">
 					<view class="username">账号</view>
@@ -58,6 +62,7 @@
 		justify-content: center;
 		align-items: center;
 	}
+<<<<<<< HEAD
 	.titleImg{
 		width: 435rpx;
 		height: 136rpx;
@@ -65,6 +70,12 @@
 	.content{
 		width: 90%;
 		height: 600rpx;
+=======
+	.content{
+		width: 90%;
+		height: 600rpx;
+		// margin-top: 100rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		// background-color: aqua;
 		display: flex;
 		flex-direction: column;
@@ -92,7 +103,10 @@
 				padding: 0 15%;
 				border-radius: 58rpx;
 				background-color: #DD000F;
+<<<<<<< HEAD
 				color: white;
+=======
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 			}
 			.username{
 				position: absolute;

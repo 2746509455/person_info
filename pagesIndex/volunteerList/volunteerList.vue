@@ -1,11 +1,17 @@
 <template>
 	<view>
+<<<<<<< HEAD
 		<view class="" @click="back">
 			<u-navbar :height="40" :is-back="true" title="志愿者服务列表">
 			
 			</u-navbar>
 		</view>
 		
+=======
+		<u-navbar @leftClick="back" :is-fixed="false" :is-back="true" title="志愿者服务列表">
+		
+		</u-navbar>
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		<view class="container">
 			<!-- 顶部大图 -->
 			<view class="banner">
@@ -28,7 +34,11 @@
 					</view>
 					
 					
+<<<<<<< HEAD
 					<view class="item" @click="toDetails">
+=======
+					<view class="item">
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 						<view class="left">
 							<image src="@/static/image/index/help-old.png" class="cardImg"></image>
 						</view>
@@ -41,7 +51,11 @@
 					</view>
 					
 					
+<<<<<<< HEAD
 					<view class="item" @click="toDetails">
+=======
+					<view class="item">
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 						<view class="left">
 							<image src="@/static/image/index/chahua.png" class="cardImg"></image>
 						</view>
@@ -76,12 +90,19 @@
 				})
 			},
 			back(){
+<<<<<<< HEAD
+=======
+				console.log('返回');
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 				uni.navigateTo({
 					url:'/pages/index/index'
 				})
 			}
+<<<<<<< HEAD
 			
 			
+=======
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 		}
 	}
 </script>
@@ -89,9 +110,15 @@
 <style scoped lang="less">
 	.container{
 		width: 100vw;
+<<<<<<< HEAD
 		padding-top: 60rpx;
 		background-color: #f3f3f3;
 		padding-bottom: 190rpx;
+=======
+		margin-top: 80rpx;
+		background-color: #f3f3f3;
+		padding-bottom: 20rpx;
+>>>>>>> 0d3a162e4e97bc5de0b294c2e8c72137cc8ebf80
 	}
 	.banner{
 		width: 100%;
