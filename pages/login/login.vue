@@ -20,7 +20,6 @@
 </template>
 
 <script>
-	import api from '@/api/index.js'
 	export default {
 		data() {
 			return {
@@ -28,18 +27,10 @@
 			}
 		},
 		methods: {
-			login() {
-				api.Login({
-					username: this.username,
-					password: this.pasw
-				}).then(res => {
-					console.log(res);
-					uni.navigateTo({
-						url: '/pages/index/index'
-					})
-					uni.setStorageSync('config',res.data.Config)
+			login(){
+				uni.navigateTo({
+					url:'/pages/index/index'
 				})
-				
 			}
 		}
 	}
