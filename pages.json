@@ -32,7 +32,7 @@
 			}
         }
         ,{
-            "path" : "pagesIndex/learnList/learnList",
+            "path" : "pagesIndex/learnDetails/learnDetails",
 			"style": {
 				"navigationStyle": "custom"
 			}

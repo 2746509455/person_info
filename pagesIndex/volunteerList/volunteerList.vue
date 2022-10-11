@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="" @click="back">
+		<view class="banTab" @click="back">
 			<u-navbar :height="40" :is-back="true" title="志愿者服务列表">
 			
 			</u-navbar>
@@ -87,9 +87,11 @@
 </script>
 
 <style scoped lang="less">
+	.banTab{
+		height: 80rpx;
+	}
 	.container{
 		width: 100vw;
-		padding-top: 60rpx;
 		background-color: #f3f3f3;
 		padding-bottom: 190rpx;
 	}

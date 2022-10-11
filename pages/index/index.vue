@@ -121,7 +121,7 @@
 						</view>
 					</view>
 					<view class="main">
-						<view class="mainInfo">
+						<view class="mainInfo" @click="toLearnDetails">
 							<view>8月28日参加创城主题党日活动</view>
 						</view>
 						<view class="dashe"></view>
@@ -156,11 +156,21 @@
 		},
 
 		methods: {
+			
+			// 去学习活动详情
+			toLearnDetails(){
+				uni.navigateTo({
+					url:'/pagesIndex/learnDetails/learnDetails'
+				})
+			},
+			// 去志愿者服务列表
 			tovoList() {
 				uni.navigateTo({
 					url: '/pagesIndex/volunteerList/volunteerList'
 				})
 			},
+			
+			// 去志愿者服务详情
 			toDetails() {
 				uni.navigateTo({
 					url: '/pagesIndex/volunteerList/listDetails/listDetails'
