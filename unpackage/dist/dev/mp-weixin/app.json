@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pagesIndex/volunteerList/volunteerList",
+    "pagesIndex/volunteerList/listDetails/listDetails",
+    "pages/login/login",
+    "pagesIndex/learnList/learnList"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {},
+  "usingComponents": {}
+}

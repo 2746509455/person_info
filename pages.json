@@ -7,43 +7,45 @@
 			
 			"path": "pages/index/index",
 			"style": {
-				
+				"navigationStyle": "custom"
 			}
 		}
 	    ,{
             "path" : "pagesIndex/volunteerList/volunteerList",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
+            "style": {
+            	"navigationStyle": "custom"
             }
             
         }
         ,{
             "path" : "pagesIndex/volunteerList/listDetails/listDetails",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+			"style": {
+				"navigationStyle": "custom"
+			}
+           
             
         }
         ,{
             "path" : "pages/login/login",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
+			"style": {
+				"navigationStyle": "custom"
+			}
+        }
+        ,{
+            "path" : "pagesIndex/learnList/learnList",
+			"style": {
+				"navigationStyle": "custom"
+			}
+            
             
         }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "党员'码'上查",
+		// "navigationBarTitleText": "信息码上查",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"navigationStyle": "custom"
+		"backgroundColor": "#F8F8F8"
+		// "navigationStyle": "custom"
 	},
 	"uniIdRouter": {},
 	"tabBar": {

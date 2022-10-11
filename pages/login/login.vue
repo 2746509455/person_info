@@ -1,7 +1,9 @@
 <template>
 	<view>
 		<view class="container">
-			<view class="title">兴仁党建</view>
+			<view class="title">
+				<image class="titleImg" src="@/static/image/login/zi.png" mode=""></image>
+			</view>
 			<view class="content">
 				<view class="input">
 					<view class="username">账号</view>
@@ -18,6 +20,7 @@
 </template>
 
 <script>
+	import api from '@/api/index.js'
 	export default {
 		data() {
 			return {
@@ -25,10 +28,18 @@
 			}
 		},
 		methods: {
-			login(){
-				uni.navigateTo({
-					url:'/pages/index/index'
+			login() {
+				api.Login({
+					username: this.username,
+					password: this.pasw
+				}).then(res => {
+					console.log(res);
+					uni.navigateTo({
+						url: '/pages/index/index'
+					})
+					uni.setStorageSync('config',res.data.Config)
 				})
+				
 			}
 		}
 	}
@@ -56,10 +67,13 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.titleImg{
+		width: 435rpx;
+		height: 136rpx;
+	}
 	.content{
 		width: 90%;
 		height: 600rpx;
-		// margin-top: 100rpx;
 		// background-color: aqua;
 		display: flex;
 		flex-direction: column;
@@ -87,6 +101,7 @@
 				padding: 0 15%;
 				border-radius: 58rpx;
 				background-color: #DD000F;
+				color: white;
 			}
 			.username{
 				position: absolute;

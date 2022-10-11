@@ -1,15 +1,12 @@
 <template>
 	<view>
-		<u-navbar :is-back="true" title="首页">
-
-		</u-navbar>
-		<scroll-view scroll-y style="width: 100vw;height: 100vh;">
+		<view style="width: 100vw;height: 100vh;">
 			<view class="top-image">
-				<image src="@/static/image/index/title.png" mode=""></image>
+				<image class="banImg" src="@/static/image/index/title.png" mode=""></image>
 			</view>
 			<view class="content">
 				<view class="info">
-					<view class="heade-image" style="">
+					<view class="heade-image">
 						<view class="image" style="background: red;">
 							<image src="@/static/image/index/head.png" style="width: 100%;height: 100%;"></image>
 						</view>
@@ -29,49 +26,52 @@
 					<view class="person-info">
 						<view style="padding-bottom:22rpx">
 							<view class="" style="float: left;padding-right: 60rpx;">
-								姓名：李铮
+								<text style="font-weight: 600;">姓名:</text>
+								<text style="margin-left: 20rpx;">李铮</text>
 							</view>
 							<text
 								style="background-color: #E85656;color: aliceblue;padding: 4rpx 16rpx 4rpx 16rpx;border-radius: 10px;font-size: 12px;">在职党员</text>
 						</view>
-						<view style="padding-bottom:22rpx">党龄：10年</view>
 						<view style="padding-bottom:22rpx">
-							<view>
-								所在党支部:
-							</view>
-							<view>
-								枣庄市高新区兴仁街道党总支第三支部
-							</view>
+							<text style="font-weight: 600;">党龄：</text>
+							<text>10年</text>
 						</view>
-						<view style="padding-bottom:22rpx">志愿服务累计时长：20.0小时</view>
+						<view style="padding-bottom:22rpx">
+							<view style="font-weight: 600;">所在党支部:</view>
+							<view>枣庄市高新区兴仁街道党总支第三支部</view>
+						</view>
+						<view style="padding-bottom:22rpx">
+							<text style="font-weight: 600;">志愿服务累计时长：</text>
+							<text>20.0小时</text>
+						</view>
 					</view>
 
 				</view>
 				<view class="activity">
-					<view class="title_loc">
+					<view class="title_loc" style="height: 80rpx;">
 						<view class="rod"></view>
-						<view class="title">
+						<view class="title" style="font-weight: 600;">
 							党员风采展示
 						</view>
 					</view>
 					<view class="scrollFirst" style="white-space: nowrap;">
 						<scroll-view enable-flex="true" scroll-x="true" class="scroll_first" @scrolltoupper="upper"
 							@scrolltolower="lower" @scroll="scroll">
-							<image src="@/static/image/index/activity.png" class="oipc"></image>
-							<image src="@/static/image/index/activity.png" class="oipc"></image>
-							<image src="@/static/image/index/activity.png" class="oipc"></image>
-							<image src="@/static/image/index/activity.png" class="oipc"></image>
-							<image src="@/static/image/index/activity.png" class="oipc"></image>
+							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
+							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
+							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
+							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
+							<image src="@/static/image/index/activity.png" class="oipc" @click="preview"></image>
 						</scroll-view>
 					</view>
 
 				</view>
 				<view class="service">
-					<view class="title_loc" style="display: flex;flex-direction: column;">
+					<view class="title_loc" style="display: flex;flex-direction: column;height: 80rpx;">
 						<view class="head">
 							<view class="headBox" style="display: flex;">
 								<view class="rod"></view>
-								<view class="title">
+								<view class="title" style="font-weight: 600;">
 									志愿服务
 								</view>
 							</view>
@@ -80,38 +80,38 @@
 								查看全部
 							</view>
 						</view>
-						<view class="scrollSecond" style="white-space: nowrap;">
-							<scroll-view class="scroll_second" scroll-x="true" @scroll="scroll" scroll-left="120">
-								<view class="inblock">
-									<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
-									<view class="text">七夕主题活动</view>
-								</view>
-								<view class="inblock">
-									<image src="@/static/image/index/help-old.png" class="oipcSecondImage"></image>
-									<view class="text">帮助老年人清理卫生</view>
-								</view>
-								<view class="inblock">
-									<image src="@/static/image/index/chahua.png" class="oipcSecondImage"></image>
-									<view class="text">插画主题活动</view>
-								</view>
-								<view class="inblock">
-									<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
-									<view class="text">七夕主题活动</view>
-								</view>
-							</scroll-view>
-						</view>
-
 					</view>
+					<view class="scrollSecond" style="white-space: nowrap;margin-left: 20rpx;">
+						<scroll-view class="scroll_second" scroll-x="true" @scroll="scroll" scroll-left="120">
+							<view class="inblock" @click="toDetails">
+								<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
+								<view class="text">七夕主题活动</view>
+							</view>
+							<view class="inblock" @click="toDetails">
+								<image src="@/static/image/index/help-old.png" class="oipcSecondImage"></image>
+								<view class="text">帮助老年人清理卫生</view>
+							</view>
+							<view class="inblock" @click="toDetails">
+								<image src="@/static/image/index/chahua.png" class="oipcSecondImage"></image>
+								<view class="text">插画主题活动</view>
+							</view>
+							<view class="inblock" @click="toDetails">
+								<image src="@/static/image/index/77.png" class="oipcSecondImage"></image>
+								<view class="text">七夕主题活动</view>
+							</view>
+						</scroll-view>
+					</view>
+
 
 
 
 				</view>
 				<view class="learning">
-					<view class="title_loc" style="display: flex;flex-direction: column;">
+					<view class="title_loc" style="display: flex;flex-direction: column;height: 80rpx;">
 						<view class="head">
 							<view class="headBox" style="display: flex;">
 								<view class="rod"></view>
-								<view class="title">
+								<view class="title" style="font-weight: 600;">
 									党员学习活动清单
 								</view>
 							</view>
@@ -140,15 +140,16 @@
 
 				</view>
 			</view>
-		</scroll-view>
+		</view>
 	</view>
 </template>
 
 <script>
+	import api from '@/api/index.js'
 	export default {
 		data() {
 			return {
-			
+
 			}
 		},
 		onLoad() {
@@ -156,14 +157,28 @@
 		},
 
 		methods: {
-			tovoList(){
+			tovoList() {
 				uni.navigateTo({
-					url:'/pagesIndex/volunteerList/volunteerList'
+					url: '/pagesIndex/volunteerList/volunteerList'
 				})
 			},
-			
-			
-			
+			toDetails() {
+				uni.navigateTo({
+					url: '/pagesIndex/volunteerList/listDetails/listDetails'
+				})
+			},
+			// 点击图片查看大图
+			preview() {
+				uni.previewImage({
+					urls: ["/static/image/index/activity.png"],
+					current: '',
+					success: function(res) {
+						console.log('查看大图')
+					}
+				})
+			},
+
+
 			// ··················滚动内容
 			change(e) {
 				this.current = e.detail.current;
@@ -191,6 +206,11 @@
 		background-color: darkred;
 	}
 
+	.banImg {
+		width: 100vw;
+		height: 376rpx;
+	}
+
 	.content {
 		position: absolute;
 		top: 328rpx;
@@ -206,7 +226,7 @@
 	}
 
 	.scrollFirst {
-		margin-left: 40rpx;
+		margin-left: 20rpx;
 	}
 
 	.scroll_first {
@@ -316,19 +336,20 @@
 	}
 
 	.main {
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 
 	}
 
 	.mainInfo {
 		line-height: 60rpx;
-		height: 80rpx;
+		height: 70rpx;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		-webkit-box-orient: vertical;
+		font-size: 28rpx;
 		/* border-bottom: 1px dashed #E3E3E3; */
 	}
 
@@ -345,6 +366,9 @@
 		color: #D22C2C;
 		font-family: PingFangSC-Medium, PingFang SC;
 		font-size: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.title {

@@ -1,8 +1,11 @@
 <template>
 	<view>
-		<u-navbar @leftClick="back" :is-fixed="false" :is-back="true" title="志愿者服务列表">
+		<view class="" @click="back">
+			<u-navbar :height="40" :is-back="true" title="志愿者服务列表">
+			
+			</u-navbar>
+		</view>
 		
-		</u-navbar>
 		<view class="container">
 			<!-- 顶部大图 -->
 			<view class="banner">
@@ -25,7 +28,7 @@
 					</view>
 					
 					
-					<view class="item">
+					<view class="item" @click="toDetails">
 						<view class="left">
 							<image src="@/static/image/index/help-old.png" class="cardImg"></image>
 						</view>
@@ -38,7 +41,7 @@
 					</view>
 					
 					
-					<view class="item">
+					<view class="item" @click="toDetails">
 						<view class="left">
 							<image src="@/static/image/index/chahua.png" class="cardImg"></image>
 						</view>
@@ -73,11 +76,12 @@
 				})
 			},
 			back(){
-				console.log('返回');
 				uni.navigateTo({
 					url:'/pages/index/index'
 				})
 			}
+			
+			
 		}
 	}
 </script>
@@ -85,9 +89,9 @@
 <style scoped lang="less">
 	.container{
 		width: 100vw;
-		margin-top: 80rpx;
+		padding-top: 60rpx;
 		background-color: #f3f3f3;
-		padding-bottom: 20rpx;
+		padding-bottom: 190rpx;
 	}
 	.banner{
 		width: 100%;

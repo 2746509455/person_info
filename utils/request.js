@@ -1,6 +1,5 @@
 // 全局请求封装
 export default (url, method, params) => {
-	const openid = uni.getStorageSync('openid')
 	uni.showLoading({
 		title: "加载中"
 	});
@@ -37,7 +36,7 @@ export default (url, method, params) => {
 				reject(err);
 			},
 			complete() {
-				uni.hideLoading();
+				uni.hideToast();
 			}
 		});
 	});
